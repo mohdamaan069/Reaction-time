@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reaction Time Game</title>
+    <style>
+        h1{
+            text-align: center;
+            color: gold;
+        }
+        body {
+            background-image: url("wallpaper-mania.com_High_resolution_wallpaper_background_ID_77700812861 (1).jpg");
+            background-repeat: no-repeat;
+            background-size: 100% ;
+            
+        }
+        .shape {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid green;
+        }
+
+        .rectangle {
+            background-color: yellow;
+        }
+
+        #game-container {
+            position: relative;
+            height: 300px;
+        }
+
+        #reaction-time {
+            color: chartreuse;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reaction Time Game</h1>
+    <div id="game-container">
+        <div id="moving-shape" class="shape"></div>
+    </div>
+    <div id="reaction-time"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
